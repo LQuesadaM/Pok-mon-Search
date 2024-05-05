@@ -19,18 +19,32 @@
   background-color: var(--clr-gray);
 }
 
+.main {
+  padding: 2rem;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  margin-bottom: 1rem;
+}
+
 .main-search {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .search-input {
   padding: 0.5rem;
   min-width: 220px;
   border-radius: 10px;
-  border: transparent;
+  border: var(--clr-lightBlack);
 }
 
 .search-button {
@@ -48,12 +62,6 @@
 
 .search-button > svg:hover {
   transform: scale(1.2);
-}
-
-.main {
-  padding: 1rem;
-  margin: 0 auto;
-  max-width: 1000px;
 }
 
 .container-single-card {
