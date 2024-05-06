@@ -12,3 +12,18 @@ const defense = document.getElementById("defense");
 const spAttack = document.getElementById("special-attack");
 const spDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
+const pokeApi = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon"
+
+
+const fetchData = async () => {
+    try {
+        const res = await fetch(pokeApi)
+        const data = await res.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+fetchData()
+
