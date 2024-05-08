@@ -26,6 +26,11 @@ const fetchData = async () => {
     containerImg.innerHTML = `<img id="sprite" src="${data.sprites.front_default}" alt="${data.name}">`;
     weight.textContent = data.weight;
     height.textContent = data.height;
+    type.innerHTML = data.types
+      .map((type) => {
+        return `<span id="types" class="font-500">${type.type.name}</span>`;
+      })
+      .join(" / ");
 
     //stats
     hp.textContent = data.stats[0].base_stat;
